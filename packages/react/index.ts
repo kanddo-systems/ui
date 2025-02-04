@@ -1,3 +1,1 @@
-import { theme } from '@kanddo-ui/core';
-
-console.log('Tema:', theme);
+export { Button } from "./src/components/Button/Button";

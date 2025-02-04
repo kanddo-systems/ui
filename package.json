@@ -1,0 +1,25 @@
+{
+  "name": "kanddo-ui",
+  "version": "0.1.7",
+  "workspaces": [
+    "packages/*"
+  ],
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build --workspace @kanddo-ui/core && npm run build --workspace @kanddo-ui/react",
+    "publish:all": "npm publish --access public && npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "description": "To install dependencies:",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

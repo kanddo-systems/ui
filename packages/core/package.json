@@ -1,0 +1,14 @@
+{
+  "name": "@kanddo-ui/core",
+  "version": "0.2.6",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist/**/*"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

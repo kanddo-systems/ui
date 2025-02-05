@@ -1,7 +1,7 @@
 import React from 'react';
 import { borderRadius, sizes, transitions } from '@kanddo-ui/core';
 import { colors, spacing, typography } from '@kanddo-ui/core';
-import '@kanddo-ui/core/src/styles/css/fonts.css';
+import '@kanddo-ui/fonts/dist/styles.css';
 
 export interface InputProps {
     label: string;

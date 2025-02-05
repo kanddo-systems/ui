@@ -6,4 +6,5 @@ export const animations = {
 
 export const transitions = {
     button: 'all 0.3s ease',
+    color: 'background-color 0.3s, opacity 0.3s'
 };

@@ -14,9 +14,12 @@ export default {
     layout: 'centered',
   },
   argTypes: {
-    primary: {
-      control: 'boolean',
-      description: 'Defines whether the button is primary (blue) or secondary (gray).',
+    colorVariant: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'success', 'danger', 'warning', 'info'],
+      },
+      description: 'Defines the color variant of the button.',
     },
     rounded: {
       control: {
@@ -45,49 +48,49 @@ const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   children: 'Click me',
-  primary: true,
+  colorVariant: 'primary',
   rounded: 'medium',
 };
 
 export const PrimaryButton = Template.bind({});
 PrimaryButton.args = {
   children: 'Primary Button',
-  primary: true,
+  colorVariant: 'primary',
   rounded: 'medium',
 };
 
 export const SecondaryButton = Template.bind({});
 SecondaryButton.args = {
   children: 'Secondary Button',
-  primary: false,
+  colorVariant: 'secondary',
   rounded: 'medium',
 };
 
 export const SmallRoundedButton = Template.bind({});
 SmallRoundedButton.args = {
   children: 'Small Rounded Button',
-  primary: true,
+  colorVariant: 'primary',
   rounded: 'small',
 };
 
 export const LargeRoundedButton = Template.bind({});
 LargeRoundedButton.args = {
   children: 'Large Rounded Button',
-  primary: false,
+  colorVariant: 'secondary',
   rounded: 'large',
 };
 
 export const FullRoundedButton = Template.bind({});
 FullRoundedButton.args = {
   children: 'Full Rounded Button',
-  primary: true,
+  colorVariant: 'primary',
   rounded: 'full',
 };
 
 export const DisabledButton = Template.bind({});
 DisabledButton.args = {
   children: 'Disabled Button',
-  primary: true,
+  colorVariant: 'primary',
   rounded: 'medium',
   disabled: true,
 };
@@ -95,11 +98,10 @@ DisabledButton.args = {
 export const CustomSizeButton = Template.bind({});
 CustomSizeButton.args = {
   children: 'Custom Size Button',
-  primary: true,
+  colorVariant: 'primary',
   rounded: 'medium',
   style: {
     padding: '20px 40px',
     fontSize: '18px',
   },
 };
-

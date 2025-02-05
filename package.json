@@ -7,6 +7,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "storybook": "npm run storybook --prefix packages/react",
     "build": "npm run build --workspace @kanddo-ui/core && npm run build --workspace @kanddo-ui/react",
     "publish:all": "npm publish --access public && npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react"
   },

@@ -1,6 +1,6 @@
 export const typography = {
     fontSize: '14px',
-    fontFamily: '"Helvetica Neue", sans-serif',
+    fontFamily: '"Montserrat", sans-serif',
     h1: {
         fontSize: '32px',
         fontWeight: 'bold',

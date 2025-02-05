@@ -1,6 +1,7 @@
 import React from 'react';
 import { borderRadius } from '@kanddo-ui/core';
 import { colors, spacing, typography, RoundedSize } from '@kanddo-ui/core';
+import '@kanddo-ui/core/src/styles/css/fonts.css';
 
 export interface ButtonProps {
     primary?: boolean;

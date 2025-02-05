@@ -4,3 +4,4 @@ export { typography } from './typography';
 export { shadows } from './shadows';
 export { gradients } from './gradients';
 export { breakpoints } from './breakpoints';
+export { rounded } from './rounded';

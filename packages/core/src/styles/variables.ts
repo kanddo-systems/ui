@@ -1,4 +1,4 @@
-import { colors, spacing, typography } from '../tokens';
+import { colors, rounded, spacing, typography } from '../tokens';
 
 export const generateCSSVariables = () => {
   return `
@@ -12,4 +12,11 @@ export const generateCSSVariables = () => {
       --spacing-large: ${spacing.large};
     }
   `;
+};
+
+export const borderRadius = {
+  small: rounded.small,
+  medium: rounded.medium,
+  large: rounded.large,
+  full: rounded.full,
 };

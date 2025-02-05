@@ -16,9 +16,6 @@
     "@kanddo-ui/core": "^0.2.6",
     "typescript": "^5.0.0"
   },
-  "dependencies": {
-    "@types/react": "^19.0.8"
-  },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
     "@storybook/addon-essentials": "^8.5.3",
@@ -31,6 +28,10 @@
     "@storybook/react": "^8.5.3",
     "@storybook/react-webpack5": "^8.5.3",
     "@storybook/test": "^8.5.3",
+    "@types/react": "^19.0.8",
     "storybook": "^8.5.3"
+  },
+  "dependencies": {
+    "react": "^19.0.0"
   }
 }

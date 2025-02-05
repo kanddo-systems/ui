@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "jsx": "preserve",
+        "skipLibCheck": true,
         "declaration": true,
         "declarationDir": "./dist",
         "outDir": "./dist",
@@ -10,5 +12,8 @@
     },
     "include": [
         "src/**/*"
-    ]
+    ],
+    "exclude": ["../../node_modules/@types/mdx/types.d.ts"]
 }
+
+

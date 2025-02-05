@@ -5,3 +5,4 @@ export { shadows } from './shadows';
 export { gradients } from './gradients';
 export { breakpoints } from './breakpoints';
 export { rounded } from './rounded';
+export { sizes } from './sizes';

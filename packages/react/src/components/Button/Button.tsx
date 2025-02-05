@@ -1,27 +1,26 @@
 import React from 'react';
-import { borderRadius, Colors, transitions } from '@kanddo-ui/core';
+import { borderRadius, sizes, transitions } from '@kanddo-ui/core';
 import { colors, spacing, typography, RoundedSize } from '@kanddo-ui/core';
 import '@kanddo-ui/core/src/styles/css/fonts.css';
 
 export interface ButtonProps {
-    colorVariant?: Colors;
     rounded?: RoundedSize;
     children: React.ReactNode;
     onClick?: () => void;
     disabled?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ colorVariant = 'primary', rounded = 'medium', children, onClick, disabled = false }) => {
+export const Button: React.FC<ButtonProps> = ({ rounded = 'medium', children, onClick, disabled = false }) => {
     const buttonStyles = {
-        padding: spacing.medium,
+        padding: spacing.small,
         fontSize: typography.fontSize,
         fontFamily: typography.fontFamily,
-        backgroundColor: colors[colorVariant],
+        backgroundColor: colors.primary[500],
         color: colors.text,
         cursor: disabled ? 'not-allowed' : 'pointer',
         transition: transitions.color,
         opacity: disabled ? 0.6 : 1,
-        borderRadius: borderRadius(rounded),
+        borderRadius: borderRadius(sizes[rounded]),
         border: 'none',
     };
 
@@ -31,5 +30,3 @@ const Button: React.FC<ButtonProps> = ({ colorVariant = 'primary', rounded = 'me
         </button>
     );
 };
-
-export default Button;

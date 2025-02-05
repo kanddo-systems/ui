@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { borderRadius, Colors, transitions, InputSize } from '@kanddo-ui/core';
-import { colors, spacing, typography, RoundedSize } from '@kanddo-ui/core';
+import React from 'react';
+import { borderRadius, sizes, transitions } from '@kanddo-ui/core';
+import { colors, spacing, typography } from '@kanddo-ui/core';
 import '@kanddo-ui/core/src/styles/css/fonts.css';
 
 export interface InputProps {
@@ -9,82 +9,45 @@ export interface InputProps {
     onChange: (value: string) => void;
     placeholder?: string;
     type?: string;
-    required?: boolean;
-    errorMessage?: string;
-    colorVariant?: Colors;
-    rounded?: RoundedSize;
-    size?: InputSize;
+    hint?: string;
 }
 
-const Input: React.FC<InputProps> = ({
+export const Input: React.FC<InputProps> = ({
     label,
     value,
     onChange,
     placeholder = '',
     type = 'text',
-    required = false,
-    errorMessage,
-    colorVariant = 'primary',
-    rounded = 'medium',
-    size = 'medium',
+    hint,
 }) => {
-    const [isTouched, setIsTouched] = useState(false);
-
-    const handleBlur = () => {
-        setIsTouched(true);
-    };
-
-    const inputSizes = {
-        small: {
-            padding: spacing.small,
-            fontSize: typography.fontSizeSmall,
-            width: '100%',
-        },
-        medium: {
-            padding: spacing.medium,
-            fontSize: typography.fontSize,
-            width: '100%',
-        },
-        large: {
-            padding: spacing.medium,
-            fontSize: typography.fontSizeLarge,
-            width: '100%',
-        },
-    };
-
-    const { padding, fontSize, width } = inputSizes[size];
-
     const inputStyles = {
-        padding,
-        fontSize,
+        padding: spacing.small,
+        fontSize: typography.fontSizeSmall,
         fontFamily: typography.fontFamily,
-        backgroundColor: '#f9f9f9',
-        border: `1px solid ${isTouched && errorMessage ? colors.danger : colors[colorVariant]}`, // Borda condicional
-        borderRadius: borderRadius(rounded),
-        outline: 'none',
+        border: `1px solid ${colors.primary[400]}`,
+        borderRadius: borderRadius(sizes.small),
         transition: transitions.color,
-        width: width || '100%',
-        boxSizing: 'border-box' as 'border-box',
+        width: '100%',
     };
 
     const labelStyles = {
-        fontSize: typography.fontSize,
+        fontSize: typography.fontSizeSmall,
         marginBottom: spacing.small,
         display: 'block',
         fontFamily: typography.fontFamily,
     };
 
     const errorStyles = {
-        color: colors.danger,
-        fontSize: typography.fontFamily,
+        color: colors.primary[700],
+        fontSize: typography.fontSizeSmall,
         marginTop: spacing.xsmall,
         fontFamily: typography.fontFamily,
     };
 
     return (
-        <div style={{ marginBottom: spacing.large }}>
+        <div style={{ marginBottom: spacing.large, width:"100%" }}>
             <label style={labelStyles}>
-                {label} {required && '*'}
+                {label}
             </label>
             <input
                 style={inputStyles}
@@ -92,11 +55,8 @@ const Input: React.FC<InputProps> = ({
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 placeholder={placeholder}
-                onBlur={handleBlur}
             />
-            {isTouched && errorMessage && <span style={errorStyles}>{errorMessage}</span>}
+            {hint && <span style={errorStyles}>{hint}</span>}
         </div>
     );
 };
-
-export default Input;

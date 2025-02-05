@@ -17,9 +17,8 @@
   "description": "To install dependencies:",
   "main": "index.js",
   "dependencies": {
-    "typescript": "^5.7.3"
+    "typescript": "^5.0.0"
   },
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"

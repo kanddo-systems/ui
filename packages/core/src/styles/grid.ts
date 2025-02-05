@@ -1,6 +1,11 @@
 export const grid = {
     containerWidth: '1200px',
-    gridGap: '16px',
-    rowGap: '24px',
+    rowGap: '16px',
     columnGap: '16px',
+    breakpoints: {
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1200px',
+    },
 };

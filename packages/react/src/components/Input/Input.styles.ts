@@ -6,7 +6,7 @@ export const Component = {
     Wrapper: styled.div`
         font-family: ${typography.fontFamily};
         margin-bottom: ${spacing.large};
-        color: ${colors.text.default}
+        color: ${colors.text.muted}
         width: 100%;
     `,
     Label: styled.label`

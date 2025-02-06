@@ -1,6 +1,6 @@
 {
   "name": "@kanddo-ui/react",
-  "version": "0.1.8",
+  "version": "0.1.11",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "@kanddo-ui/core": "^0.2.9",
+    "@kanddo-ui/core": "^0.2.10",
     "typescript": "^5.0.0"
   },
   "devDependencies": {

@@ -39,7 +39,7 @@ WithHint.args = {
   value: '',
   placeholder: 'Enter your email',
   type: 'email',
-  hint: 'Please enter a valid email address',
+  hint: 'This is a Hint!',
 };
 
 export const Password = Template.bind({});

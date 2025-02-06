@@ -1,16 +1,15 @@
 # Kanddo UI
 
-<!-- <p align="center">
-  <a href="https://kanddo.com" rel="noopener" target="_blank"><img width="150" height="133" src="https://via.placeholder.com/150" alt="Kanddo UI logo"></a>
-</p> -->
-
 <h1 align="center">Kanddo UI</h1>
+<p align="center">
+  <a href="https://kanddo.com" rel="noopener" target="_blank"><img width="250" src="https://github.com/user-attachments/assets/daf76b15-0960-4f89-9fe1-5bca71286493" alt="Kanddo UI logo"></a>
+</p> 
 
 <div align="center">
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kanddo/kanddo-ui/blob/HEAD/LICENSE)
-<!-- [![npm latest package](https://img.shields.io/npm/v/@kanddo-ui/core/latest.svg)](https://www.npmjs.com/package/@kanddo-ui/core)
-[![npm downloads](https://img.shields.io/npm/dm/@kanddo-ui/core.svg)](https://www.npmjs.com/package/@kanddo-ui/core) -->
+[![npm latest package](https://img.shields.io/npm/v/@kanddo-ui/core/latest.svg)](https://www.npmjs.com/package/@kanddo-ui/core)
+<!-- [![npm downloads](https://img.shields.io/npm/dm/@kanddo-ui/core.svg)](https://www.npmjs.com/package/@kanddo-ui/core) -->
 <!-- [![GitHub branch status](https://img.shields.io/github/checks-status/kanddo/kanddo-ui/HEAD)](https://github.com/kanddo/kanddo-ui/commits/HEAD/)
 [![Coverage status](https://img.shields.io/codecov/c/github/kanddo/kanddo-ui.svg)](https://codecov.io/gh/kanddo/kanddo-ui/)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/Kanddo_UI.svg?label=follow+Kanddo+UI)](https://twitter.com/Kanddo_UI) -->

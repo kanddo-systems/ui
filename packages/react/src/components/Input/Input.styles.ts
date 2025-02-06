@@ -4,6 +4,7 @@ import { colors, spacing, typography } from '@kanddo-ui/core';
 
 export const Component = {
     Wrapper: styled.div`
+        font-family: ${typography.fontFamily};
         margin-bottom: ${spacing.large};
         color: ${colors.text.default}
         width: 100%;
@@ -11,13 +12,11 @@ export const Component = {
     Label: styled.label`
         font-size: ${typography.sizes.small};
         margin-bottom: ${spacing.small};
-        font-family: ${typography.fontFamily};
         display: block;
     `,
     Field: styled.input`
         padding: ${spacing.small};
         font-size: ${typography.sizes.small};
-        font-family: ${typography.fontFamily};
         border: 1px solid ${colors.background.muted};
         border-radius: ${borderRadius(sizes.small)};
         transition: ${transitions.color};

@@ -1,7 +1,7 @@
 # Kanddo UI
 
 <p align="center">
-  <a href="https://kanddo.com" rel="noopener" target="_blank"><img width="250" src="https://github.com/user-attachments/assets/daf76b15-0960-4f89-9fe1-5bca71286493" alt="Kanddo UI logo"></a>
+  <a href="https://kanddo.com" rel="noopener" target="_blank"><img width="260" src="https://github.com/user-attachments/assets/8beed104-0450-47e6-9bf9-5d07b3c67840" alt="Kanddo UI logo"></a>
 </p> 
 
 <div align="center">

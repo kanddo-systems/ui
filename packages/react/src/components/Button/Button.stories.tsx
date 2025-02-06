@@ -24,7 +24,7 @@ export default {
     },
     rounded: {
       control: 'select',
-      options: ['none', 'small', 'medium', 'large', 'full'],
+      options: ['none', 'small', 'medium', 'large'],
       description: 'Defines the border radius of the button.',
     },
   },

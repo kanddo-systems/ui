@@ -4,7 +4,7 @@ import { colors, spacing, typography } from '@kanddo-ui/core';
 
 import { ButtonProps } from "./Button";
 
-export const StyledButton = styled.button<ButtonProps>`
+export const Component = styled.button<ButtonProps>`
     padding: ${spacing.small};
     font-size: ${typography.fontSize};
     font-family: ${typography.fontFamily};

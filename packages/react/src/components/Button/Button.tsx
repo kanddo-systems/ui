@@ -1,18 +1,23 @@
 import React from 'react';
 import { RoundedSize } from '@kanddo-ui/core';
-import { StyledButton } from './Button.styles';
+import { Component } from './Button.styles';
 
 export interface ButtonProps {
-    rounded?: RoundedSize;
     children: React.ReactNode;
+    rounded: RoundedSize;
     onClick?: () => void;
     disabled?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ rounded = 'medium', children, onClick, disabled = false }) => {
+export const Button: React.FC<ButtonProps> = ({
+    children,
+    onClick,
+    rounded = 'medium',
+    disabled = false
+}) => {
     return (
-        <StyledButton rounded={rounded} onClick={disabled ? undefined : onClick} disabled={disabled}>
+        <Component rounded={rounded} onClick={disabled ? undefined : onClick} disabled={disabled}>
             {children}
-        </StyledButton>
+        </Component>
     );
 };

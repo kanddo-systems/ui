@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hint, InputWrapper, Label, StyledInput } from './Input.styles';
+import { Component } from './Input.styles';
 
 export interface InputProps {
     label: string;
@@ -18,14 +18,14 @@ export const Input: React.FC<InputProps> = ({
     type = 'text',
     hint,
 }) => (
-    <InputWrapper>
-        <Label>{label}</Label>
-        <StyledInput
+    <Component.Wrapper>
+        <Component.Label>{label}</Component.Label>
+        <Component.Field
             type={type}
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder={placeholder}
         />
-        {hint && <Hint>{hint}</Hint>}
-    </InputWrapper>
+        {hint && <Component.Hint>{hint}</Component.Hint>}
+    </Component.Wrapper>
 );

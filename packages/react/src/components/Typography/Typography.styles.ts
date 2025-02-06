@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { typography } from '@kanddo-ui/core';
+import { colors, typography } from '@kanddo-ui/core';
 
 export const typographyStyles = {
     h1: { fontSize: typography.sizes.xxxxLarge, fontWeight: typography.weight.bold },
@@ -14,6 +14,7 @@ export const typographyStyles = {
 
 export const Component = styled.span<{ variant: keyof typeof typographyStyles }>`
     font-family: ${typography.fontFamily};
+    color: ${colors.text.default};
     font-size: ${(props) => typographyStyles[props.variant].fontSize};
     font-weight: ${(props) => typographyStyles[props.variant].fontWeight};
 `;

@@ -2,7 +2,7 @@ import { borderRadius, colors, shadows, sizes, spacing, typography } from '@kand
 import styled from 'styled-components';
 
 export const Component = {
-    Wrapper: styled.div`
+  Wrapper: styled.div`
     font-family: ${typography.fontFamily};
     background-color: ${colors.background.default};
     border-radius: ${borderRadius(sizes.medium)};
@@ -10,12 +10,7 @@ export const Component = {
     padding: ${spacing.medium};
     width: 300px;
   `,
-    Title: styled.h2`
-    font-size: ${typography.sizes.xLarge};
-    margin-bottom: 8px;
-  `,
-    Content: styled.p`
-    font-size: ${typography.sizes.small};
-    color: ${colors.text.subtle};
+  ChildrenWrapper: styled.p`
+    margin-top: ${spacing.medium};
   `,
 };

@@ -8,8 +8,12 @@
   "type": "module",
   "scripts": {
     "storybook": "npm run storybook --prefix packages/react",
-    "build": "npm run build --workspace @kanddo-ui/core && npm run build --workspace @kanddo-ui/react",
-    "publish:all": "npm publish --access public && npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react"
+    "build:all": "npm run build --workspace @kanddo-ui/core && npm run build --workspace @kanddo-ui/react",
+    "build:core": "npm run build --workspace @kanddo-ui/core",
+    "build:react": "npm run build --workspace @kanddo-ui/react",
+    "publish:all": "npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react",
+    "publish:core": "npm publish --access public --workspace @kanddo-ui/core",
+    "publish:react": "npm publish --access public --workspace @kanddo-ui/react"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

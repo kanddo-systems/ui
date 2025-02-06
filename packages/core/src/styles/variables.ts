@@ -4,7 +4,7 @@ export const generateCSSVariables = () => {
   return `
     :root {
       --primary-color: ${colors.primary};
-      --font-size: ${typography.fontSize};
+      --font-size: ${typography.sizes.medium};
       --font-family: ${typography.fontFamily};
       --spacing-small: ${spacing.small};
       --spacing-medium: ${spacing.medium};

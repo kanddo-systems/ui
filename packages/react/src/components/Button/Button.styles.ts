@@ -6,10 +6,10 @@ import { ButtonProps } from "./Button";
 
 export const Component = styled.button<ButtonProps>`
     padding: ${spacing.small};
-    font-size: ${typography.fontSize};
+    font-size: ${typography.sizes.small};
     font-family: ${typography.fontFamily};
     background-color: ${colors.primary[500]};
-    color: ${colors.text};
+    color: ${colors.text.inverted};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     transition: ${transitions.color};
     opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};

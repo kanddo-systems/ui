@@ -12,5 +12,15 @@ export const colors = {
         '900': '#82450c',
         '950': '#462104',
     },
-    text: "#fff",
+    background: {
+        default: "#ffffff",
+        muted: "#f5f5f5",
+        inverted: "#121212",
+    },
+    text: {
+        default: "#121212",
+        muted: "#4a4a4a",
+        inverted: "#ffffff",
+        subtle: "#777",
+    },
 };

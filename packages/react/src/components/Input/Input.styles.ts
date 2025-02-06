@@ -5,14 +5,14 @@ import { colors, spacing, typography } from '@kanddo-ui/core';
 export const Component = {
     Wrapper: styled.div`
         margin-bottom: ${spacing.large};
-        width: 100%;
         color: ${colors.text.default}
+        width: 100%;
     `,
     Label: styled.label`
         font-size: ${typography.sizes.small};
         margin-bottom: ${spacing.small};
-        display: block;
         font-family: ${typography.fontFamily};
+        display: block;
     `,
     Field: styled.input`
         padding: ${spacing.small};
@@ -23,7 +23,6 @@ export const Component = {
         transition: ${transitions.color};
         width: 100%;
         outline: none;
-
         &:focus {
             box-shadow: 0 0 0 1px ${colors.primary[400]};
         }

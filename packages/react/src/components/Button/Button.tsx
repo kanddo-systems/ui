@@ -4,7 +4,7 @@ import { Component } from './Button.styles';
 
 export interface ButtonProps {
     children: React.ReactNode;
-    rounded: RoundedSize;
+    rounded?: RoundedSize;
     onClick?: () => void;
     disabled?: boolean;
 }

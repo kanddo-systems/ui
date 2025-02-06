@@ -6,8 +6,7 @@ interface TypographyProps {
     children: React.ReactNode;
 }
 
-const Typography: React.FC<TypographyProps> = ({ variant, children }) => {
+export const Typography: React.FC<TypographyProps> = ({ variant, children }) => {
     return <Component variant={variant}>{children}</Component>;
 };
 
-export default Typography;

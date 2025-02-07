@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from './Input.styles';
+import { Typography } from '../Typography/Typography';
 
 export interface InputProps {
     label: string;
@@ -19,13 +20,13 @@ export const Input: React.FC<InputProps> = ({
     hint,
 }) => (
     <Component.Wrapper>
-        <Component.Label>{label}</Component.Label>
+        <Typography variant='default'>{label}</Typography>
         <Component.Field
             type={type}
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder={placeholder}
         />
-        {hint && <Component.Hint>{hint}</Component.Hint>}
+        {hint && <Typography variant='bodySmall'>{hint}</Typography>}
     </Component.Wrapper>
 );

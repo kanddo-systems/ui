@@ -9,11 +9,6 @@ export const Component = {
         color: ${colors.text.default};
         width: 100%;
     `,
-    Label: styled.label`
-        font-size: ${typography.sizes.small};
-        margin-bottom: ${spacing.small};
-        display: block;
-    `,
     Field: styled.input`
         padding: ${spacing.small};
         font-size: ${typography.sizes.small};
@@ -25,11 +20,5 @@ export const Component = {
         &:focus {
             box-shadow: 0 0 0 1px ${colors.primary[400]};
         }
-    `,
-    Hint: styled.span`
-        color: ${colors.primary[600]};
-        font-size: ${typography.sizes.small};
-        margin-top: ${spacing.xsmall};
-        font-family: ${typography.fontFamily};
     `,
 };

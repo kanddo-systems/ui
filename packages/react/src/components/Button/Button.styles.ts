@@ -16,4 +16,8 @@ export const Component = styled.button<ButtonProps>`
     border-radius: ${({ rounded }) => borderRadius(sizes[rounded || 'medium'])};
     border: none;
     width: 100%;
+
+    &:hover {
+        background-color: ${colors.primary[400]};
+    }
 `;

@@ -6,7 +6,7 @@ on:
       - main 
 
 jobs:
-  build-and-deploy:
+  build-and-deploy-storybook:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,6 @@ jobs:
 
       - name: Build Storybook
         run: npm run build:storybook
-        working-directory: ./packages/react
 
       - name: Deploy to GitHub Pages
         run: npm run publish:storybook

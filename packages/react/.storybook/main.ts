@@ -13,7 +13,7 @@ const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-    "../src/shared/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)" 
+    "../src/docs/**/*.stories.@(js|jsx|mjs|ts|tsx)" 
   ],
   addons: [
     getAbsolutePath("@storybook/addon-webpack5-compiler-swc"),

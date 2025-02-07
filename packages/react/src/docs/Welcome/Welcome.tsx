@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { transitions } from '@kanddo-ui/core';
 import { colors, spacing, typography } from '@kanddo-ui/core';
-import { Button } from '../../../components/Button/Button';
-import { Typography } from '../../../components/Typography/Typography';
+import { Button } from '../../components/Button/Button';
+import { Typography } from '../../components/Typography/Typography';
 
 export interface WelcomeProps {
     title: string;

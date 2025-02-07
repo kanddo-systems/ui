@@ -1,9 +1,5 @@
 # Kanddo UI
 
-<p align="center">
-  <a href="https://kanddo.com" rel="noopener" target="_blank"><img width="260" src="https://github.com/user-attachments/assets/8beed104-0450-47e6-9bf9-5d07b3c67840" alt="Kanddo UI logo"></a>
-</p> 
-
 <div align="center">
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kanddo/kanddo-ui/blob/HEAD/LICENSE)

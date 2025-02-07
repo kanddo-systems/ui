@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "storybook": "storybook dev -p 6006",
-    "publish:storybook": "storybook build"
+    "build:storybook": "storybook build"
   },
   "peerDependencies": {
     "@kanddo-ui/core": "^0.2.12",

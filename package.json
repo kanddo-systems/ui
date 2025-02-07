@@ -11,7 +11,7 @@
     "build:all": "npm run build --workspace @kanddo-ui/core && npm run build --workspace @kanddo-ui/react",
     "build:core": "npm run build --workspace @kanddo-ui/core",
     "build:react": "npm run build --workspace @kanddo-ui/react",
-    "build:storybook": "npm run build-storybook --workspace=packages/react",
+    "build:storybook": "npm run build:storybook --workspace=packages/react",
     "publish:all": "npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react",
     "publish:core": "npm publish --access public --workspace @kanddo-ui/core",
     "publish:react": "npm publish --access public --workspace @kanddo-ui/react",

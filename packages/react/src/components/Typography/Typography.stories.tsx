@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import { Typography } from './Typography';
 
 const meta: Meta = {
-  title: 'Getting Started/Typography',
+  title: 'Components/Typography',
   component: Typography,
   parameters: {
     layout: 'centered',

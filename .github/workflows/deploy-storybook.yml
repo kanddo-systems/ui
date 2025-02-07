@@ -3,7 +3,7 @@ name: Deploy Storybook to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ou a branch que você usa para produção
+      - main
 
 jobs:
   build-and-deploy:

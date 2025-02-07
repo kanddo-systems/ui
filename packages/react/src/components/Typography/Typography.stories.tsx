@@ -5,6 +5,9 @@ import { Typography } from './Typography';
 const meta: Meta = {
   title: 'Getting Started/Typography',
   component: Typography,
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 export default meta;
@@ -47,7 +50,7 @@ export const Default: StoryFn = () => (
             </div>
           ))}
         </div>
-        <div style={{ fontWeight: 'bold', marginBottom: '8px', fontFamily: 'Montserrat' }}>
+        <div style={{ fontWeight: 'bold', marginBottom: '8px', marginLeft: '90px', fontFamily: 'Montserrat' }}>
           {group.group}
         </div>
       </div>

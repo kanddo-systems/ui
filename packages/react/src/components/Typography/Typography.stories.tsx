@@ -14,7 +14,6 @@ export default meta;
 
 const typography = [
   {
-    group: 'Darker, Bold, Tighter',
     items: [
       { variant: 'h1' as const, title: 'Heading 1' },
       { variant: 'h2' as const, title: 'Heading 2' },
@@ -22,7 +21,6 @@ const typography = [
     ]
   },
   {
-    group: 'Lighter, Semi Bold, Default',
     items: [
       { variant: 'h4' as const, title: 'Heading 4' },
       { variant: 'h5' as const, title: 'Heading 5' },
@@ -30,7 +28,6 @@ const typography = [
     ]
   },
   {
-    group: 'Regular, Default',
     items: [
       { variant: 'default' as const, title: 'Body Default' },
       { variant: 'bodySmall' as const, title: 'Body Small' },
@@ -49,9 +46,6 @@ export const Default: StoryFn = () => (
               <Typography variant={item.variant}>{item.title}</Typography>
             </div>
           ))}
-        </div>
-        <div style={{ fontWeight: 'bold', marginBottom: '8px', marginLeft: '90px', fontFamily: 'Montserrat' }}>
-          {group.group}
         </div>
       </div>
     ))}

@@ -54,7 +54,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ title, description }) => {
                 <Component.ListItem>Explore the components in the sidebar.</Component.ListItem>
                 <Component.ListItem>Customize the design tokens to fit your project needs.</Component.ListItem>
             </Component.List>
-            <Button>Get Started</Button>
+            <Button onClick={() => window.open('https://github.com/kanddo-systems/ui', '_blank')}>Get Started</Button>
         </Component.Wrapper>
     );
 };

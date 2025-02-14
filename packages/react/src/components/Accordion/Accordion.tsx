@@ -24,7 +24,6 @@ export const Accordion: FC<AccordionProps> = ({ items }) => {
         <Component.Item key={index}>
           <Component.Header isOpen={openIndex === index} onClick={() => toggleAccordion(index)}>
             <Typography variant="default">{item.title}</Typography>
-            <span>{openIndex === index ? "▲" : "▼"}</span>
           </Component.Header>
           <Component.Content isOpen={openIndex === index}>{item.content}</Component.Content>
         </Component.Item>

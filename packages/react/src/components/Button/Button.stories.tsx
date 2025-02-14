@@ -48,5 +48,5 @@ DisabledButton.args = {
 export const RoundedButton = Template.bind({});
 RoundedButton.args = {
   children: 'Rounded Button',
-  rounded: 'medium' as RoundedSize,
+  rounded: 'large' as RoundedSize,
 };

@@ -22,7 +22,7 @@ export const Component = {
     font-size: ${typography.sizes.small};
     border: none;
     text-align: left;
-    background: ${({ isOpen }) => (isOpen ? colors.primary[200] : colors.background.default)};
+    background: ${({ isOpen }) => (isOpen ? colors.primary[500] : colors.background.default)};
     cursor: pointer;
     outline: none;
     display: flex;
@@ -30,6 +30,10 @@ export const Component = {
     align-items: center;
     border-radius: ${borderRadius(sizes.xsmall)};
     transition: ${transitions.color}, background 0.2s ease-in-out;
+
+    & > * {
+      color: ${({ isOpen }) => (isOpen ? colors.text.inverted : colors.text.default)};
+    }
   `,
   Content: styled.div<{ isOpen: boolean }>`
     max-height: ${({ isOpen }) => (isOpen ? "500px" : "0")};

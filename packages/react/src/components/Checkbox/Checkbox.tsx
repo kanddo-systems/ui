@@ -53,10 +53,9 @@ const Component = {
         display: flex;
         align-items: center;
         justify-content: center;
-        accent-color: ${colors.background.default};
 
         &:checked {
-            outline: 1px solid ${colors.primary[500]};
+            accent-color: ${colors.background.default};
         }
     `,
     Hint: styled.div`

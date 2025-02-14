@@ -8,17 +8,32 @@ export const Component = {
         margin-bottom: ${spacing.large};
         color: ${colors.text.default};
         width: 100%;
+        display: flex;
+        flex-direction: column;
     `,
-    Field: styled.input`
-        padding: ${spacing.small};
-        font-size: ${typography.sizes.small};
+    Label: styled.label`
+        display: flex;
+        align-items: center;
+        gap: ${spacing.small};
+        cursor: pointer;
+    `,
+    Box: styled.input`
+        width: ${sizes.medium};
+        height: ${sizes.medium};
         border: 1px solid ${colors.background.muted};
-        border-radius: ${borderRadius(sizes.small)};
+        border-radius: ${borderRadius(sizes.xsmall)};
         transition: ${transitions.color};
-        width: 100%;
-        outline: none;
-        &:focus {
-            box-shadow: 0 0 0 1px ${colors.primary[400]};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:checked {
+            accent-color: ${colors.background.default};
         }
+    `,
+    Hint: styled.div`
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
     `,
 };

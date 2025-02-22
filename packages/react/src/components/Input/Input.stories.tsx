@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import { Input, InputProps } from './Input';
 
 export default {
@@ -7,15 +7,8 @@ export default {
   component: Input,
   parameters: {
     layout: 'centered',
-  },
-  argTypes: {
-    label: { control: 'text' },
-    value: { control: 'text' },
-    placeholder: { control: 'text' },
-    type: { control: 'text' },
-    hint: { control: 'text' },
-  },
-} as Meta;
+  }
+};
 
 const Template: StoryFn<InputProps> = (args) => {
   const [value, setValue] = useState(args.value || '');

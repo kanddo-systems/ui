@@ -1,17 +1,17 @@
 import React from 'react';
 import { StoryFn } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
+import { Badge, BadgeProps } from './Badge';
 import { RoundedSize } from '@kanddo-ui/core';
 
 export default {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/Badge',
+  component: Badge,
   parameters: {
     layout: 'centered',
   }
 };
 
-const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
+const Template: StoryFn<BadgeProps> = (args) => <Badge {...args} />;
 
 export const DefaultButton = Template.bind({});
 DefaultButton.args = {

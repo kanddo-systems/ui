@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import { Card, CardProps } from './Card';
 
 export default {
@@ -8,7 +8,7 @@ export default {
   parameters: {
     layout: 'centered',
   },
-} as Meta;
+};
 
 const Template: StoryFn<CardProps> = (args) => <Card {...args} />;
 

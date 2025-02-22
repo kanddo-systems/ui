@@ -1,5 +1,5 @@
 import React from "react";
-import { Meta, StoryFn } from "@storybook/react";
+import { StoryFn } from "@storybook/react";
 import { Accordion, AccordionProps } from "./Accordion";
 
 export default {
@@ -7,8 +7,8 @@ export default {
   component: Accordion,
   parameters: {
     layout: 'centered',
-  },
-} as Meta;
+  }
+};
 
 const Template: StoryFn<AccordionProps> = (args) => <Accordion {...args} />;
 

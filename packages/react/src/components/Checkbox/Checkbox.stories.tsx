@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react';
 import { Checkbox, CheckboxProps } from './Checkbox';
 
 export default {
@@ -7,13 +7,8 @@ export default {
   component: Checkbox,
   parameters: {
     layout: 'centered',
-  },
-  argTypes: {
-    label: { control: 'text' },
-    checked: { control: 'boolean' },
-    hint: { control: 'text' },
-  },
-} as Meta;
+  }
+};
 
 const Template: StoryFn<CheckboxProps> = (args) => {
   const [checked, setChecked] = useState(args.checked || false);

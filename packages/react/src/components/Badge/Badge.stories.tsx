@@ -15,19 +15,12 @@ const Template: StoryFn<BadgeProps> = (args) => <Badge {...args} />;
 
 export const DefaultButton = Template.bind({});
 DefaultButton.args = {
-  children: 'Click Me',
+  children: 'Badge',
   rounded: 'medium' as RoundedSize,
-};
-
-export const DisabledButton = Template.bind({});
-DisabledButton.args = {
-  children: 'Disabled Button',
-  rounded: 'medium' as RoundedSize,
-  disabled: true,
 };
 
 export const RoundedButton = Template.bind({});
 RoundedButton.args = {
-  children: 'Rounded Button',
+  children: 'Rounded Badge',
   rounded: 'large' as RoundedSize,
 };

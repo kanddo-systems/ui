@@ -13,7 +13,7 @@ export const Component = styled.button<ButtonProps>`
     transition: ${transitions.color};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
-    border-radius: ${({ rounded }) => borderRadius(sizes[rounded || 'medium'])};
+    border-radius: ${({ rounded }) => borderRadius(rounded || 'medium')};
     border: none;
     width: 100%;
 

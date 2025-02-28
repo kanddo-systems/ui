@@ -11,7 +11,7 @@ export const Component = styled.button<BadgeProps>`
     background-color: ${colors.primary[500]};
     color: ${colors.text.inverted};
     transition: ${transitions.color};
-    border-radius: ${({ rounded }) => borderRadius(sizes[rounded || 'medium'])};
+    border-radius: ${({ rounded }) => borderRadius(rounded || 'medium')};
     border: none;
     width: 100%;
     cursor: text;

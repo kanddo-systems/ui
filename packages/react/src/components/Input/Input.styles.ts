@@ -13,7 +13,7 @@ export const Component = {
         padding: ${spacing.small};
         font-size: ${typography.sizes.small};
         border: 1px solid ${colors.background.muted};
-        border-radius: ${borderRadius(sizes.small)};
+        border-radius: ${borderRadius('small')};
         transition: ${transitions.color};
         width: 100%;
         outline: none;

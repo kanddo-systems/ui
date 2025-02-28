@@ -6,7 +6,7 @@ export const Component = {
     font-family: ${typography.fontFamily};
     width: 100%;
     border: 1px solid ${colors.background.muted};
-    border-radius: ${borderRadius(sizes.small)};
+    border-radius: ${borderRadius('small')};
     overflow: hidden;
     background: ${colors.background.default};
   `,
@@ -28,7 +28,7 @@ export const Component = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: ${borderRadius(sizes.xsmall)};
+    border-radius: ${borderRadius('xsmall')};
     transition: ${transitions.color}, background 0.2s ease-in-out;
 
     & > * {

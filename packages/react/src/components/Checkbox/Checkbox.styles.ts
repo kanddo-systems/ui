@@ -21,7 +21,7 @@ export const Component = {
         width: ${sizes.medium};
         height: ${sizes.medium};
         border: 1px solid ${colors.background.muted};
-        border-radius: ${borderRadius(sizes.xsmall)};
+        border-radius: ${borderRadius('xsmall')};
         transition: ${transitions.color};
         display: flex;
         align-items: center;

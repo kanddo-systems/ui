@@ -34,7 +34,7 @@ const Template: StoryFn<TypographyProps> = () => (
         items: [
           { variant: "default" as const, title: "Body Default" },
           { variant: "bodySmall" as const, title: "Body Small" },
-          { variant: "bodyExtraSmall" as const, title: "Body Extra Small" },
+          { variant: "bodyExtraSmall" as const, title: "Extra Small" },
         ],
       },
     ].map((group, index) => (

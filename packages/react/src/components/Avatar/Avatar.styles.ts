@@ -13,7 +13,7 @@ export const Component = {
     width: ${({ size }) => avatarSizes[size]};
     height: ${({ size }) => avatarSizes[size]};
     border-radius: 100%;
-    background-color: ${colors.background.muted};
+    background-color: ${colors.background.default};
     display: flex;
     align-items: center;
     justify-content: center;

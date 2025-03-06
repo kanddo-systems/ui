@@ -9,7 +9,8 @@ export const typographyStyles = {
     h5: { fontSize: typography.sizes.large, fontWeight: typography.weight.regular },
     h6: { fontSize: typography.sizes.medium, fontWeight: typography.weight.light },
     default: { fontSize: typography.sizes.small, fontWeight: typography.weight.regular },
-    bodySmall: { fontSize: typography.sizes.xSmall, fontWeight: typography.weight.light }
+    bodySmall: { fontSize: typography.sizes.xSmall, fontWeight: typography.weight.light },
+    bodyExtraSmall: { fontSize: typography.sizes.xxSmall, fontWeight: typography.weight.light }
 };
 
 export const Component = styled.span<{ variant: keyof typeof typographyStyles }>`

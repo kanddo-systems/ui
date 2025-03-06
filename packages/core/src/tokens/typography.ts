@@ -9,6 +9,7 @@ export const typography = {
         extraBold: '800',
     },
     sizes: {
+        xxSmall: '10px',
         xSmall: '12px',
         small: '14px',
         medium: '16px',

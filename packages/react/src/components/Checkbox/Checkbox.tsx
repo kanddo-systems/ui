@@ -23,7 +23,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
             />
             <Typography variant='default'>{label}</Typography>
         </Component.Label>
-        {hint && <Component.Hint><Typography variant='bodySmall'>{hint}</Typography></Component.Hint>}
+        {hint && <Component.Hint><Typography variant='bodyExtraSmall'>{hint}</Typography></Component.Hint>}
     </Component.Wrapper>
 );
 

@@ -14,6 +14,7 @@ export const Component = {
     align-items: center;
     z-index: 999;
     transition: background-color 0.3s ease;
+    padding: ${spacing.medium};
   `,
   
   Content: styled.div`

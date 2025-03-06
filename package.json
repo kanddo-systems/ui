@@ -12,7 +12,7 @@
     "build:core": "npm run build --workspace @kanddo-ui/core",
     "build:react": "npm run build --workspace @kanddo-ui/react",
     "build:storybook": "npm run build:storybook --workspace=packages/react",
-    "publish:all": "npm run build:all && npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react",
+    "publish:all": "npm run build:all && npm publish --access public --workspace @kanddo-ui/core && npm publish --access public --workspace @kanddo-ui/react && npm run publish:storybook",
     "publish:core": "npm run build:core && npm publish --access public --workspace @kanddo-ui/core",
     "publish:react": "npm run build:react && npm publish --access public --workspace @kanddo-ui/react",
     "publish:storybook": "npm run build:storybook && gh-pages -d packages/react/storybook-static"

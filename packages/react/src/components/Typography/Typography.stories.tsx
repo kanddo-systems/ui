@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryFn } from "@storybook/react";
 import { Typography, TypographyProps } from "./Typography";
+import { CombinedSizes, typography } from "@kanddo-ui/core/dist/tokens/typography";
 
 export default {
   title: "Components/Typography",
@@ -10,50 +11,41 @@ export default {
   },
 };
 
+const typographyVariants: { variant: CombinedSizes; title: string }[][] = [
+  [
+    { variant: "xxxxlarge", title: "Heading 1" },
+    { variant: "xxxlarge", title: "Heading 2" },
+    { variant: "xxlarge", title: "Heading 3" },
+  ],
+  [
+    { variant: "xlarge", title: "Heading 4" },
+    { variant: "large", title: "Heading 5" },
+    { variant: "medium", title: "Heading 6" },
+  ],
+  [
+    { variant: "small", title: "Body Default" },
+    { variant: "xsmall", title: "Body Small" },
+    { variant: "xxsmall", title: "Extra Small" },
+  ],
+];
+
+const TypographyGroup: React.FC<{ items: { variant: CombinedSizes; title: string }[] }> = ({ items }) => (
+  <div style={{ display: "flex", flexDirection: "column", marginBottom: "16px" }}>
+    {items.map((item, index) => (
+      <div key={index} style={{ marginBottom: "8px" }}>
+        <Typography variant={item.variant}>{item.title}</Typography>
+      </div>
+    ))}
+  </div>
+);
+
 const Template: StoryFn<TypographyProps> = () => (
-  <div style={{ padding: "24px" }}>
-    <h2 style={{ marginBottom: "32px", fontFamily: "Montserrat" }}>
+  <div style={{ padding: "24px", maxWidth: "800px" }}>
+    <h2 style={{ marginBottom: "32px", fontFamily: typography.fontFamily }}>
       Typography
     </h2>
-    {[
-      {
-        items: [
-          { variant: "h1" as const, title: "Heading 1" },
-          { variant: "h2" as const, title: "Heading 2" },
-          { variant: "h3" as const, title: "Heading 3" },
-        ],
-      },
-      {
-        items: [
-          { variant: "h4" as const, title: "Heading 4" },
-          { variant: "h5" as const, title: "Heading 5" },
-          { variant: "h6" as const, title: "Heading 6" },
-        ],
-      },
-      {
-        items: [
-          { variant: "default" as const, title: "Body Default" },
-          { variant: "bodySmall" as const, title: "Body Small" },
-          { variant: "bodyExtraSmall" as const, title: "Extra Small" },
-        ],
-      },
-    ].map((group, index) => (
-      <div
-        key={index}
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "8px",
-        }}
-      >
-        <div>
-          {group.items.map((item, index) => (
-            <div key={index}>
-              <Typography variant={item.variant}>{item.title}</Typography>
-            </div>
-          ))}
-        </div>
-      </div>
+    {typographyVariants.map((group, index) => (
+      <TypographyGroup key={index} items={group} />
     ))}
   </div>
 );

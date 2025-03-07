@@ -23,7 +23,7 @@ export const Accordion: FC<AccordionProps> = ({ items }) => {
       {items.map((item, index) => (
         <Component.Item key={index}>
           <Component.Header isOpen={openIndex === index} onClick={() => toggleAccordion(index)}>
-            <Typography variant="default">{item.title}</Typography>
+            <Typography variant="small">{item.title}</Typography>
           </Component.Header>
           <Component.Content isOpen={openIndex === index}>{item.content}</Component.Content>
         </Component.Item>

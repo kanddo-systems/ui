@@ -9,9 +9,9 @@ export interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ title, children }) => (
   <Component.Wrapper>
-    <Typography variant='h4'>{title}</Typography>
+    <Typography variant='xlarge'>{title}</Typography>
     <Component.ChildrenWrapper>
-      <Typography variant='default'>{children}</Typography>
+      <Typography variant='small'>{children}</Typography>
     </Component.ChildrenWrapper>
   </Component.Wrapper>
 );

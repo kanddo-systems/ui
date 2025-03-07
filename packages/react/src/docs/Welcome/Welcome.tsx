@@ -46,8 +46,8 @@ export const Component = {
 export const Welcome: React.FC<WelcomeProps> = ({ title, description }) => {
     return (
         <Component.Wrapper>
-            <Typography variant='h1'>{title}</Typography>
-            <Typography variant='default'>{description}</Typography>
+            <Typography variant='xxxxlarge'>{title}</Typography>
+            <Typography variant='small'>{description}</Typography>
             <Component.SectionTitle>Getting Started</Component.SectionTitle>
             <Component.List>
                 <Component.ListItem>Install the package with <code>npm install <b>@kanddo-ui/react</b></code></Component.ListItem>

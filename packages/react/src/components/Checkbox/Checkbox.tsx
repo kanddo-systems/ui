@@ -21,9 +21,9 @@ export const Checkbox: React.FC<CheckboxProps> = ({
                 checked={checked}
                 onChange={(e) => onChange(e.target.checked)}
             />
-            <Typography variant='default'>{label}</Typography>
+            <Typography variant='small'>{label}</Typography>
         </Component.Label>
-        {hint && <Component.Hint><Typography variant='bodyExtraSmall'>{hint}</Typography></Component.Hint>}
+        {hint && <Component.Hint><Typography variant='xxsmall'>{hint}</Typography></Component.Hint>}
     </Component.Wrapper>
 );
 

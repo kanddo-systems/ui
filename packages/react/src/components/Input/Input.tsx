@@ -20,13 +20,13 @@ export const Input: React.FC<InputProps> = ({
     hint,
 }) => (
     <Component.Wrapper>
-        <Typography variant='default'>{label}</Typography>
+        <Typography variant='small'>{label}</Typography>
         <Component.Field
             type={type}
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder={placeholder}
         />
-        {hint && <Typography variant='bodySmall'>{hint}</Typography>}
+        {hint && <Typography variant='xxsmall'>{hint}</Typography>}
     </Component.Wrapper>
 );

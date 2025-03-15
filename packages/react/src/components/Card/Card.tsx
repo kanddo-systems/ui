@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC, memo } from 'react';
 import { Component } from './Card.styles';
 import { Typography } from '../Typography/Typography';
 
@@ -7,11 +7,15 @@ export interface CardProps {
   children: React.ReactNode;
 }
 
-export const Card: React.FC<CardProps> = ({ title, children }) => (
-  <Component.Wrapper>
-    <Typography variant='xlarge'>{title}</Typography>
+const CardComponent: FC<CardProps> = ({ title, children }) => (
+  <Component.Wrapper aria-labelledby={title}>
+    <Typography variant="xlarge">{title}</Typography>
     <Component.ChildrenWrapper>
-      <Typography variant='small'>{children}</Typography>
+      <Typography variant="small">
+        {children || 'No content available.'}
+      </Typography>
     </Component.ChildrenWrapper>
   </Component.Wrapper>
 );
+
+export const Card = memo(CardComponent);

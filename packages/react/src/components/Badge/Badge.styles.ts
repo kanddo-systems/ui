@@ -4,7 +4,7 @@ import { colors, spacing, typography } from '@kanddo-ui/core';
 
 import { BadgeProps } from "./Badge";
 
-export const Component = styled.button<BadgeProps>`
+export const Component = styled.span<BadgeProps>`
     padding: ${spacing.xsmall} ${spacing.small};
     font-size: ${typography.sizes.small};
     font-family: ${typography.fontFamily};

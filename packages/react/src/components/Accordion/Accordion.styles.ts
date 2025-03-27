@@ -22,7 +22,7 @@ export const Component = {
     font-size: ${typography.sizes.small};
     border: none;
     text-align: left;
-    background: ${({ isOpen }) => (isOpen ? colors.primary[500] : colors.background.default)};
+    background: ${({ isOpen }) => (isOpen ? colors.primary[800] : colors.background.default)};
     cursor: pointer;
     outline: none;
     display: flex;

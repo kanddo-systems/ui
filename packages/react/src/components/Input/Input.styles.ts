@@ -10,6 +10,7 @@ export const Component = {
         width: 100%;
     `,
     Field: styled.input`
+        margin-top: ${spacing.xsmall};
         padding: ${spacing.small};
         font-size: ${typography.sizes.small};
         border: 1px solid ${colors.background.muted};
@@ -18,7 +19,7 @@ export const Component = {
         width: 100%;
         outline: none;
         &:focus {
-            box-shadow: 0 0 0 1px ${colors.primary[400]};
+            box-shadow: 0 0 0 1px ${colors.primary[700]};
         }
     `,
 };

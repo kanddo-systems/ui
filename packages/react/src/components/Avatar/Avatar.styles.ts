@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { colors, typography, borderRadius } from '@kanddo-ui/core';
+import { colors, typography } from '@kanddo-ui/core';
 
 const avatarSizes = {
     small: '40px',
-    medium: '60px',
-    large: '80px',
+    medium: '58px',
+    large: '64px',
 };
 
 export const Component = {
@@ -18,7 +18,7 @@ export const Component = {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid ${colors.primary[500]};
+    border: 1px solid ${colors.primary[700]};
   `,
     Image: styled.img`
     width: 100%;

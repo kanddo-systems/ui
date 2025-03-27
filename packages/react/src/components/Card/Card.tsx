@@ -9,7 +9,7 @@ export interface CardProps {
 
 const CardComponent: FC<CardProps> = ({ title, children }) => (
   <Component.Wrapper aria-labelledby={title}>
-    <Typography variant="xlarge">{title}</Typography>
+    <Typography variant="small">{title}</Typography>
     <Component.ChildrenWrapper>
       <Typography variant="small">
         {children || 'No content available.'}

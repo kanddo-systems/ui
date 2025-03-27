@@ -14,7 +14,7 @@ const Template: StoryFn<CardProps> = (args) => <Card {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Card Title',
+  title: 'Create a Company',
   children: 'This is a simple card component created with styled-components.',
 };
 

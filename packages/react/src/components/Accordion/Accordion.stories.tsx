@@ -10,13 +10,17 @@ export default {
   }
 };
 
-const Template: StoryFn<AccordionProps> = (args) => <Accordion {...args} />;
+const Template: StoryFn<AccordionProps> = (args) => (
+  <div style={{ minWidth: 400 }}>
+    <Accordion {...args} />
+  </div>
+);
 
 export const Default = Template.bind({});
 Default.args = {
   items: [
-    { id: 1, title: "Section 1", content: "Content for section 1" },
-    { id: 2, title: "Section 2", content: "Content for section 2" },
-    { id: 3, title: "Section 3", content: "Content for section 3" },
+    { id: 1, title: "Is it accessible?", content: "Content for section 1" },
+    { id: 2, title: "Is it styled?", content: "Content for section 2" },
+    { id: 3, title: "Is it animated?", content: "Content for section 3" },
   ],
 };

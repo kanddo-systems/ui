@@ -15,7 +15,7 @@ const Template: StoryFn<AvatarProps> = (args) => <Avatar {...args} />;
 export const WithLetters = Template.bind({});
 WithLetters.args = {
     letters: 'AB',
-    size: 'medium',
+    size: 'small',
 };
 
 export const WithImage = Template.bind({});
@@ -24,10 +24,10 @@ WithImage.args = {
     size: 'medium',
 };
 
-export const Small = Template.bind({});
-Small.args = {
+export const Medium = Template.bind({});
+Medium.args = {
     letters: 'AB',
-    size: 'small',
+    size: 'medium',
 };
 
 export const Large = Template.bind({});

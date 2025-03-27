@@ -6,9 +6,10 @@ import { BadgeProps } from "./Badge";
 
 export const Component = styled.span<BadgeProps>`
     padding: ${spacing.xsmall} ${spacing.small};
-    font-size: ${typography.sizes.small};
+    font-size: ${typography.sizes.xsmall};
+    font-weight:${typography.weight.semiBold};
     font-family: ${typography.fontFamily};
-    background-color: ${colors.primary[500]};
+    background-color: ${colors.primary[800]};
     color: ${colors.text.inverted};
     transition: ${transitions.color};
     border-radius: ${({ rounded }) => borderRadius(rounded || 'medium')};
@@ -17,6 +18,6 @@ export const Component = styled.span<BadgeProps>`
     cursor: text;
 
     &:hover {
-        background-color: ${colors.primary[400]};
+        background-color: ${colors.primary[600]};
     }
 `;

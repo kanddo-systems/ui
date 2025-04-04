@@ -18,7 +18,7 @@ export const Component = {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid ${colors.primary[700]};
+    border: 1px solid ${colors.primary[800]};
   `,
     Image: styled.img`
     width: 100%;

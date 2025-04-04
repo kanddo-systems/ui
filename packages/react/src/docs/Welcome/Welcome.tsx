@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { transitions } from '@kanddo-ui/core';
 import { colors, spacing, typography } from '@kanddo-ui/core';
-import { Button } from '../../components/Button/Button';
-import { Typography } from '../../components/Typography/Typography';
-
 export interface WelcomeProps {
     title: string;
     description: string;
@@ -21,7 +18,7 @@ export const Component = {
         flex-direction: column;
     `,
     SectionTitle: styled.h2`
-        font-size: ${typography.sizes.large};
+        font-size: ${typography.sizes.medium};
         margin-top: ${spacing.medium};
         color: ${colors.text.default};
     `,
@@ -30,7 +27,7 @@ export const Component = {
         padding: 0;
     `,
     ListItem: styled.li`
-        font-size: ${typography.sizes.medium};
+        font-size: ${typography.sizes.small};
         margin-bottom: ${spacing.small};
         a {
             color: ${colors.primary[400]};
@@ -46,15 +43,12 @@ export const Component = {
 export const Welcome: React.FC<WelcomeProps> = ({ title, description }) => {
     return (
         <Component.Wrapper>
-            <Typography variant='xxxxlarge'>{title}</Typography>
-            <Typography variant='small'>{description}</Typography>
             <Component.SectionTitle>Getting Started</Component.SectionTitle>
             <Component.List>
                 <Component.ListItem>Install the package with <code>npm install <b>@kanddo-ui/react</b></code></Component.ListItem>
                 <Component.ListItem>Explore the components in the sidebar.</Component.ListItem>
                 <Component.ListItem>Customize the design tokens to fit your project needs.</Component.ListItem>
             </Component.List>
-            <Button onClick={() => window.open('https://github.com/kanddo-systems/ui', '_blank')}>Get Started</Button>
         </Component.Wrapper>
     );
 };

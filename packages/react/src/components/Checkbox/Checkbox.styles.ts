@@ -20,7 +20,7 @@ export const Component = {
     Box: styled.input`
         width: ${sizes.medium};
         height: ${sizes.medium};
-        border: 1px solid ${colors.background.muted};
+        border: 1px solid ${colors.background.default};
         border-radius: ${borderRadius('xsmall')};
         transition: ${transitions.color};
         display: flex;
@@ -28,7 +28,7 @@ export const Component = {
         justify-content: center;
 
         &:checked {
-            accent-color: ${colors.background.default};
+            accent-color: ${colors.primary[900]};
         }
     `,
     Hint: styled.div`

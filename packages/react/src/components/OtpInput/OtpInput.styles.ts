@@ -10,13 +10,13 @@ export const Component = {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     `,
 
     InputContainer: styled.div`
         display: flex;
-        gap: ${spacing.medium};
-        margin: ${spacing.medium} 0px;
+        gap: ${spacing.small};
+        margin: ${spacing.small} 0px;
     `,
 
     Field: styled.input`
@@ -25,8 +25,8 @@ export const Component = {
         border: 1px solid ${colors.background.muted};
         border-radius: ${borderRadius('small')};
         transition: ${transitions.color};
-        width: 2.5rem;
-        height: 3rem;
+        width: 1.5rem;
+        height: 2rem;
         text-align: center;
         outline: none;
 

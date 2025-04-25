@@ -21,7 +21,7 @@ type Typography = {
     }
 }
 export const typography: Typography = {
-    fontFamily: '"Montserrat", sans-serif',
+    fontFamily: 'Montserrat, sans-serif',
     weight: {
         light: '300',
         regular: '400',

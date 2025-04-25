@@ -21,6 +21,5 @@ export const colors = {
         default: "#121212",
         muted: "#4a4a4a",
         inverted: "#ffffff",
-        subtle: "#777",
     },
 };

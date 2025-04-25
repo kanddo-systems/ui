@@ -1,11 +1,22 @@
-export const grid = {
-    containerWidth: '1200px',
+import { Sizes } from "../tokens/sizes";
+
+type Grid = {
+    containerWidth: string,
+    rowGap: string,
+    columnGap: string,
+    breakpoints: { [K in keyof Sizes]: string }
+}
+export const grid: Grid = {
+    containerWidth: '1248px',
     rowGap: '16px',
     columnGap: '16px',
     breakpoints: {
-        sm: '576px',
-        md: '768px',
-        lg: '992px',
-        xl: '1200px',
+        none: '0px',
+        xsmall: '448px',
+        small: '576px',
+        medium: '768px',
+        large: '992px',
+        xlarge: '1248px',
+        xxlarge: '2016px',
     },
 };

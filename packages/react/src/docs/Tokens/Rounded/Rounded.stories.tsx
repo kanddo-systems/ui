@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryFn } from "@storybook/react";
-import { rounded } from "@kanddo-ui/core";
+import { rounded, sizes } from "@kanddo-ui/core";
 import { Card } from "../../../components/Card/Card";
 import styled from "styled-components";
 
@@ -42,20 +42,10 @@ export default {
   },
 };
 
-const order = [
-  "none",
-  "xsmall",
-  "small",
-  "medium",
-  "large",
-  "xlarge",
-  "xxlarge",
-];
-
 const Template: StoryFn = () => (
   <Container>
     <Card title="Rounded Tokens">
-      {order.map((name) => (
+      {Object.keys(sizes).map((name) => (
         <RoundedItem key={name} name={name} value={rounded[name]} />
       ))}
     </Card>

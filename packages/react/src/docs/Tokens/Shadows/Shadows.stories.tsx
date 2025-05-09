@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryFn } from "@storybook/react";
-import { shadows } from "@kanddo-ui/core";
+import { shadows, sizes } from "@kanddo-ui/core";
 import { Card } from "../../../components/Card/Card";
 import styled from "styled-components";
 
@@ -44,20 +44,11 @@ export default {
   },
 };
 
-const order = [
-  "none",
-  "xsmall",
-  "small",
-  "medium",
-  "large",
-  "xlarge",
-  "xxlarge",
-];
 
 const Template: StoryFn = () => (
   <Container>
     <Card title="Shadow Tokens">
-      {order.map((name) => (
+      {Object.keys(sizes).map((name) => (
         <ShadowItem key={name} name={name} value={shadows[name]} />
       ))}
     </Card>
